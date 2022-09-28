@@ -1,0 +1,178 @@
+
+@import url(variables.css);
+
+
+
+.section-pigmento-polvo{
+    margin-top: 30px;
+}
+.section-pigmento-pasta{
+    margin: 80px 0px 50px 0px;
+}
+.section-resina{
+    margin: 80px 0px 50px 0px;
+}
+.section-pigmento-polvo h2,
+.section-pigmento-pasta h2,
+.section-resina h2{
+    margin: 0px 0px 20px 30px;
+    color: var(--color_sesion_titulo);
+    text-shadow: 0px 0px 3px;
+    font-size: 2.2rem;
+    font-weight: 500;
+      
+      
+}
+.contenedor-pigmeto-polvo,
+.contenedor-pigmeto-pasta,
+.contenedor-resina-monomero{
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+gap: 20px;
+align-items: center;
+justify-items: center;
+
+}
+.plantilla-cards{
+    width: 200px;
+    height: 300px;
+    box-shadow: 0px 0px 10px;
+    border-radius: 5px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    transition: all 0.5s;
+    position: relative;
+    
+}
+
+.plantilla-cards::before{
+    content: "Producto Quimico";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 300;
+    color: #fff;
+    position: absolute;
+    width: 100%;
+    height: 50px;
+    background-color: var(--color_menu_hover);
+    transition: all 1s;
+    border-bottom:3px solid red;
+    border-radius:5px 5px 60px 0px;
+}
+.plantilla-cards .img-plantilla-cards,
+.plantilla-cards .img-plantilla-cards-pasta-pigmento,
+.plantilla-cards .img-plantilla-cards-resina{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.plantilla-cards .img-plantilla-cards img{
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    margin-top: 50px;
+}
+
+
+.plantilla-cards .img-plantilla-cards-pasta-pigmento img{
+    width: 70%;
+    height: 70%;
+    z-index: 1;
+    margin-top: 50px;
+}
+
+.plantilla-cards .img-plantilla-cards-resina img{
+    width: 80%;
+    height: 70%;
+    z-index: 1;
+    margin-top: 80px;
+}
+
+.plantilla-cards span{
+    width: 100%;
+    height: 25%;
+    font-weight: 500;
+    font-size: 1.4rem;
+    text-align: center;
+    margin-top: 18px;
+}
+
+.plantilla-cards .btn-plantilla-cards{
+    width: 100%;
+    height: 25%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--color_menu_hover);
+    position: relative;
+    border-radius: 0px 0px 5px 5px; 
+}
+
+.plantilla-cards .btn-plantilla-cards::before{
+    content: "";
+    width: 100%;
+    height: 20px;
+   top: -6px;
+   right: 0;
+    background-color:#fff;
+    position: absolute;
+    border-radius: 0px 0px 100px 100px;
+    transition: all 0.5s;
+}
+
+.plantilla-cards .btn-plantilla-cards label{
+    width: 80%;
+    height: 40px;
+    background-color: var(--color_menu_hover);
+    border-radius: 3px;
+    margin-top: 20px;
+    transition: all 1s;
+    
+}
+
+.plantilla-cards .btn-plantilla-cards label a{
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--font_sub_menu);
+}
+
+.plantilla-cards .btn-plantilla-cards label a:active{
+    color: yellow;
+}
+
+.plantilla-cards:hover{
+    background-color:var(--color_fondo_logo);
+    box-shadow: 10px 10px 30px rgb(38, 34, 34); 
+    transform: translateY(-2%) rotateY(5deg);
+    transition: all 0.2s ease-in-out;
+    
+}
+ 
+.plantilla-cards:hover .btn-plantilla-cards label{
+    background-color: var(--color_menu);
+    border-bottom:2px solid var(--color_sesion_titulo);
+    border-right:1px solid var(--color_sesion_titulo);
+}
+
+.plantilla-cards:hover::before{
+    background-color: var(--color_menu);
+}
+
+.btn-plantilla-cards label:hover{
+    cursor: pointer;
+}
+
+.plantilla-cards:hover .btn-plantilla-cards::before{
+    background-color: var(--color_fondo_logo);
+    transition: all 0.2s ease-in-out;
+}

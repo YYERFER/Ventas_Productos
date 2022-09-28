@@ -1,0 +1,669 @@
+@import url(variables.css);
+
+
+body{
+    background-color:var(--color_body) ;
+}
+
+
+#termino-condiciones-id{
+/* width: 100vw; */
+height: 100vh;
+top: 0px;
+display: flex;
+justify-content: center;
+align-items: center;
+position: fixed;
+z-index: 10;
+background-color: #090809a1;
+opacity: 0;
+left: 0; 
+width: 0;
+}
+
+#termino-condiciones-id.visible-termino{
+
+    width: 100vw; 
+    transition: opacity ease-in 0.5s;
+    position: fixed;
+    opacity: 1;
+} 
+
+
+.condicion{
+    width: 50vw;
+    background-color: #fff;
+    height: 70%;
+    z-index: 20;
+    border-radius: 5px;
+}
+.condicion .condicio-margen{
+    margin: 20px;
+}
+
+ .condicion .sub-items1{
+    display: flex;
+    border-bottom: 1px solid var(--color_linea_campo_form);
+}
+
+ .condicion .sub-items1 .terminos{
+    margin-left:15px;
+    margin-right: 8px;
+    font-size:1.2vw;
+    margin-top:5px
+}
+
+ .condicion .sub-items1 .logo-termino{
+    width: 30%;
+    font-size: 3vw;
+    font-weight: 700;
+    color: #0317f7;
+}
+
+.condicion .sub-items1 img{
+    width: 5%;
+    height: 5%;
+    margin-top: 10px;  
+    cursor: pointer;   
+}
+
+ .condicion .sub-items2{
+height: 55vh;
+overflow:auto;
+}
+
+ .condicion .sub-items2 p{
+    
+    text-align: center;
+    
+}
+
+ .condicion .sub-items2 p:nth-child(2),
+ .condicion .sub-items2 p:nth-child(4){
+    line-height: 70px;
+}
+.registro-margen{
+    padding: 45px;
+}
+
+@media only screen and (min-width: 600px){
+    .registro-margen{
+
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
+
+@media only screen and (min-width: 912px) {
+    .registro-margen{
+    
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .registro-detalle2{
+        padding-left:30px ;
+    }
+
+}
+
+
+/* INICIANDO FORMULARIO */
+
+.registro-general{
+    width: 100vw;
+    /* height: 100vh; */
+}
+.registro-contenedor{
+    width: 80%;
+    margin: auto;
+    background-color: #fff;
+    box-shadow: 0px 0px 5px black;
+    margin-top: 60px;
+    margin-bottom: 60px;
+
+    
+    
+}
+
+.registro-cara1{
+    width: 100%;
+}
+.registro-item1{
+    margin-bottom: 30px;
+}
+.registro-item1 h2{
+    color: var(--color_sesion_titulo);
+    margin-bottom: 8px;
+}
+
+.registro-item1 p{
+    font-weight: 800;
+    color: var(--color_sesion_texto);
+}
+/* FORMULARIO */
+::placeholder{
+    color: var(--color_sesion_texto);
+}
+/* CAMPO NOMBRE */
+.textNombre{
+    margin-bottom: 30px;
+}
+.textNombre label{
+    font-size: 1.4rem;
+    color: var(--color_sesion_titulo);
+
+}
+ .nombre-campo{
+    padding-top: 10px;
+ }
+
+.campoNombre{
+        background-color: transparent;
+        border: transparent;
+        height: 20px;
+        width: 100%;
+        outline: transparent;
+        border-bottom: 1px solid var(--color_linea_campo_form);
+        color:var(--color_campo_form);
+        font-family: 'Merriweather', sans-serif;
+        font-size: 1.2rem;
+        transition: 0.2s linear;
+        font-weight: 200;
+        display: flex;
+}
+
+/* CAMPO APELLIDO */
+.textApellido{
+    margin-bottom: 30px;
+}
+
+.textApellido label{
+    font-size: 1.4rem;
+    color: var(--color_sesion_titulo);
+
+}
+ .apellido-campo{
+    padding-top: 10px;
+ }
+.campoApellido{
+        background-color: transparent;
+        border: transparent;
+        height: 20px;
+        width: 100%;
+        outline: transparent;
+        border-bottom: 1px solid var(--color_linea_campo_form);
+        color:var(--color_campo_form);
+        font-family: 'Merriweather', sans-serif;
+        font-size: 1.2rem;
+        transition: 0.2s linear;
+        font-weight: 200;
+        /* padding-left: 8px; */
+        display: flex;
+   
+}
+
+/* SEXO */
+.sexo{
+    margin-bottom:30px;
+}
+.sexo label{
+    font-size: 1.4rem;
+    color: var(--color_sesion_titulo);
+    position: relative;
+}
+
+.select-sexo {
+    position: relative;
+    border-bottom: 1px solid #ccc;
+    width: 80%;
+    height: 35px;
+    margin-top: 10px;
+    color:var(--color_campo_form);
+    /* z-index: 1; */
+  
+  }
+
+/* 
+    PARA HACER LA FLECHA DEL SELECT 
+                                     */
+
+.select-sexo:before {
+    content: '';
+    position: absolute;
+    right: 5px;
+    top: 15px;
+    height: 8px;
+    width: 8px;
+    border-left:2px solid;
+    border-bottom: 2px solid;
+    transform: rotate(-45deg);
+    border-color: var(--color_sesion_titulo);
+    pointer-events:none;
+}
+
+.select-sexo select {
+    padding: 6px 8px;
+    width: 100%;
+    border: none;
+    box-shadow: none;
+    background-color: transparent;
+    background-image: none;
+    appearance: none;
+    font-size: 1.2rem;
+    color: var(--text);
+    cursor: pointer;
+ 
+}
+
+.select-sexo select:focus{
+outline: none;
+}
+select::-ms-expand{
+    display: none;
+}
+
+
+/* TIPO DE DOCUMENTO */
+.documento{
+    margin-bottom:30px;
+}
+.documento label{
+    font-size: 1.4rem;
+    color: var(--color_sesion_titulo);
+
+}
+
+.select-documento {
+    position: relative;
+    border-bottom: 1px solid #ccc;
+    width: 80%;
+    height: 35px;
+    margin-top: 10px;
+    color:var(--color_campo_form);
+    
+  }
+
+/* 
+    PARA HACER LA FLECHA DEL SELECT 
+                                    */
+.select-documento:before {
+    content: '';
+    position: absolute;
+    right: 5px;
+    top: 15px;
+    height: 8px;
+    width: 8px;
+    border-left:2px solid;
+    border-bottom: 2px solid;
+    transform: rotate(-45deg);
+    border-color: var(--color_sesion_titulo);
+    pointer-events:none;
+}
+
+.select-documento select {
+    padding: 6px 8px;
+    width: 100%;
+    border: none;
+    box-shadow: none;
+    background-color: transparent;
+    background-image: none;
+    appearance: none;
+    font-size: 1.2rem;
+    color: var(--text);
+    cursor: pointer;
+    
+}
+
+.select-documento select:focus{
+outline: none;
+}
+
+/* NUMERO DE DOCUMENTO */
+.numeroDocumento{
+    margin-bottom: 30px;
+}
+
+.numeroDocumento label{
+    font-size: 1.4rem;
+    color: var(--color_sesion_titulo);
+
+}
+ .num-document-campo{
+    padding-top: 10px;
+ }
+.numDocument{
+        background-color: transparent;
+        border: transparent;
+        height: 20px;
+        width: 100%;
+        outline: transparent;
+        border-bottom: 1px solid var(--color_linea_campo_form);
+        color:var(--color_campo_form);
+        font-family: 'Merriweather', sans-serif;
+        font-size: 1.2rem;
+        transition: 0.2s linear;
+        font-weight: 200;
+        /* padding-left: 8px; */
+        display: flex;
+
+}
+
+.num-document-campo input[type="number"]::-webkit-inner-spin-button, 
+.num-document-campo input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+    }
+.num-document-campo input[type=number] { 
+    -moz-appearance:textfield; 
+}
+
+
+/* CELULAR */
+
+.celular{
+    margin-bottom: 30px;
+}
+
+.celular label{
+    font-size: 1.4rem;
+    color: var(--color_sesion_titulo);
+
+}
+ .celular-campo{
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+ }
+
+ .celular-campo span{
+    display: flex;
+    padding-bottom: 10px;
+  
+}
+.celular-campo span b{
+   height: 20px;
+   font-weight: 500;
+   font-size: 1.2rem;
+}
+
+
+.NomMailPhopne{
+        background-color: transparent;
+        border: transparent;
+        height: 20px;
+        width: 100%;
+        outline: transparent;
+        border-bottom: 1px solid var(--color_linea_campo_form);
+        color:var(--color_campo_form);
+        font-family: 'Merriweather', sans-serif;
+        font-size: 1.2rem;
+        transition: 0.2s linear;
+        font-weight: 200;
+        margin-left: 10px;
+        display: flex;
+   
+}
+/* CAMPO EMAIL */
+.email{
+    margin-bottom: 30px;
+}
+
+.email label{
+    font-size: 1.4rem;
+    color: var(--color_sesion_titulo);    
+}
+ .imgMail-campo span{
+    display: flex;   
+}
+
+.fa-envelope{
+    color:var(--color_sesion_texto);
+    font-size: 18px; 
+ }
+ .imgMail-campo {
+    display: flex;
+    margin-top: 10px;
+ }
+.imgMail-campo span i{
+    height: 10px;
+    width: 0px;
+}
+ 
+.campoMail{
+        background-color: transparent;
+        border: transparent;
+        height: 20px;
+        width: 100%;
+        outline: transparent;
+        border-bottom: 1px solid var(--color_linea_campo_form);
+        color:rgb(39, 37, 37);
+        font-family: 'Merriweather', sans-serif;
+        font-size: 1.2rem;
+        transition: 0.2s linear;
+        font-weight: 200;
+        padding-left: 0px;
+        margin-left: 30px;
+        display: flex;
+        
+}
+
+/* CAMPO CONTRASEÑA */
+.password{
+    margin-bottom: 40px;
+}
+
+.password label{
+    font-size: 1.4rem;
+    color: var(--color_sesion_titulo);    
+}
+
+.password-campo{
+    display: flex; 
+    margin-top: 10px;  
+}
+.password-campo span{
+    display: flex;   
+}
+
+.fa-key{
+    color:var(--color_sesion_texto);
+    font-size: 18px; 
+ }
+
+ .password-campo span i{
+    height: 10px;
+    width: 0px;
+}
+
+.campoPassword{
+    background-color: transparent;
+    border: transparent;
+    height: 20px;
+    width: 100%;
+    outline: transparent;
+    border-bottom: 1px solid var(--color_linea_campo_form);
+    color:rgb(39, 37, 37);
+    font-family: 'Merriweather', sans-serif;
+    font-size: 1.2rem;
+    transition: 0.2s linear;
+    font-weight: 200;
+    margin-left: 30px;
+    display: flex;
+ 
+}
+
+/* PASSWORD DETALLES */
+
+
+.password-detalle{
+    display: flex;
+    font-size: 0.8rem; ;
+    margin-bottom: 40px;
+}
+.password-detalle span{
+    margin-right: 20px;
+    font-weight: 500;
+    font-size: 0.9rem;
+    color: var(--color_sesion_titulo);
+    
+}
+.password-detalle ul{
+    display:flex;
+    flex-wrap: wrap;
+
+}
+.password-detalle ul li{
+    list-style:disc;
+    margin-right: 55px;
+    color:var(--color_sesion_titulo);
+    width: 2x30px;
+}
+
+
+/* CHEK */
+
+.check{
+    margin-bottom: 40px;
+}
+
+.check label{
+
+    color:var(--color_sesion_titulo);
+    font-size: 1rem;
+    padding: 0px 0px 0px 30px;
+    float:left;
+    position: relative;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+
+}
+
+
+.check label:before{
+    content: '';
+    width: 17px;
+    height: 17px;
+    background: none;
+    border: 2px solid var(--color_linea_campo_form);
+    border-radius: 3px;
+    margin: 0px 0px 0px 0px;
+    position: absolute;
+    left: 0px;
+    top:0px;
+    
+}
+
+input[type=checkbox]{
+    transform: scale(0);
+    margin-bottom: 20px; 
+}
+
+
+input[type=checkbox]:checked + label:before{
+    content: '';
+    position: absolute;
+    height: 8px;
+    width: 17px;
+    border-top: 0px;
+    border-right: 0px;
+    border-left:3px solid;
+    border-bottom: 3px solid;
+    transform: rotate(-45deg);
+    border-color: var(--color_sesion_titulo);
+    pointer-events:none;
+   
+}
+.chek-item1 label i{
+    text-decoration: underline;
+    cursor:pointer;
+}
+
+
+/* BUTTOM */
+
+.boton-registrar{
+   
+    text-align: center;
+    margin: 50px 0px;
+ } 
+      .boton-registrar button{
+         width: 100%;
+         height: 50px;
+         border-radius: 5px;
+         border-color: var(--color_sesion_texto);
+         background-color: transparent;
+         font-family: 'Playfair Display', serif;
+         font-size: 1.7rem;
+         transition: all 0.5s ease;
+         cursor: pointer;
+         box-shadow: 0px 0px 20px rgb(173, 165, 165);
+         color: var(--color_sesion_titulo);
+          
+     } 
+ 
+     .boton-registrar button:hover {
+         animation: movimiento 0.9s ease-in-out infinite alternate;
+         box-shadow: inset 0px -10px 20px rgb(173, 165, 165);
+         cursor: pointer;
+     }
+     .inicia-sesion{
+        text-align: center;
+        margin: 30px 0px;
+     }
+     .inicia-sesion i{
+        text-decoration: underline;
+     }
+     .inicia-sesion i:hover{
+        cursor: pointer;
+     }
+
+/* CARA 2 */
+.registro-detalle2 {
+    width: 100%;
+}
+.registro-detalle2 h2{
+    color: var(--color_sesion_titulo);
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.detalle2-items1{
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+.detalle2-items1 img{
+    width: 80px;
+}
+.camion p{
+    font-size: 1rem;
+}
+
+
+.detalle2-items2{
+    display: flex; 
+    align-items: center;
+    margin-bottom: 40px;
+}
+.detalle2-items2 img{
+    width: 80px;
+}
+.telefono p{
+    font-size: 1rem;
+}
+
+
+.detalle2-items3{
+    display: flex;
+    align-items: center;
+}
+.detalle2-items3 img{
+    width: 80px;
+}
+.boleto p{
+    font-size: 1rem;
+}
+
+
+

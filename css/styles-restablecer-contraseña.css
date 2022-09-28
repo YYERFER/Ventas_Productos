@@ -1,0 +1,139 @@
+@import url(variables.css);
+
+body{
+    background-color: var(--color_body);
+}
+
+@media only screen and (min-width: 600px){
+
+    .items-restablecer-pass{
+        width: 80vw;
+    }
+}
+
+@media only screen and (min-width: 912px){
+
+    .items-restablecer-pass{
+        width: 70vw;   
+    }
+    
+}
+@media only screen and (min-width: 1100px){
+
+    .items-restablecer-pass{
+        width: 40vw;
+    }
+}
+
+.items-restablecer-pass{
+    max-width: 90%;
+    height: auto;
+    margin: auto;
+    margin-top: 100px;
+    margin-bottom: 50px;;
+    background-color:#fff;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px black;
+}
+
+.items-restablecer-pass .items{
+        padding: 30px;;
+        
+    }
+.items-restablecer-pass .items .item1{
+        color:var(--color_sesion_texto);
+    }
+
+.items-restablecer-pass .items .item1 h2{
+        padding-bottom: 20px;
+         color: var(--color_sesion_titulo); 
+    }
+.items-restablecer-pass .items .item1 p{
+         color: var(--color_sesion_titulo); 
+    }
+
+.items-restablecer-pass .items .item1 h2 img{
+        width: 24px;
+    }
+
+.items-restablecer-pass .items .item2{
+        color: var(--color_sesion_titulo);
+        margin-top: 40px;
+    }
+
+.restablecer-imgMail{
+        display: flex;
+        top:15px;
+}
+
+.restablecer-imgMail .fa-envelope{
+    color:var(--color_sesion_texto);
+   /* float: left; */
+    padding-top: 15px; 
+    font-size: 18px;  
+ }
+
+ .restablecer-imgMail span{
+    display: flex;
+    flex-direction: column;
+   
+}
+.restablecer-imgMail span i{
+    height: 10px;
+    width: 0px;
+    
+}
+.restablecer-pass-email label{
+    font-size: 1.5rem;
+}
+ 
+.campoMail-restablecer-contrasena{
+        background-color: transparent;
+        border: transparent;
+        height: 20px;
+        width: 100%;
+        outline: transparent;
+        border-bottom: 1px solid black;
+        color:rgb(39, 37, 37);
+        font-family: 'Merriweather', sans-serif;
+        font-size: 1.2rem;
+        transition: 0.2s linear;
+        font-weight: 200;
+        padding-left: 0px;
+        margin-left: 28px;
+        margin-top:15px;
+        display: flex;
+   
+}
+
+.boton-sesion-restablecer-contrasena{
+   
+   text-align: center;
+   margin: 40px 0px;
+} 
+     .boton-sesion-restablecer-contrasena button{
+        width: 70%;
+        height: 50px;
+        border-radius: 5px;
+        border-color: var(--color_sesion_texto);
+        background-color: transparent;
+        font-family: 'Playfair Display', serif;
+        font-size: 1.7rem;
+        transition: all 0.5s ease;
+        cursor: pointer;
+        box-shadow: 0px 0px 20px rgb(173, 165, 165);
+        color: var(--color_sesion_titulo);
+         
+    } 
+
+    .boton-sesion-restablecer-contrasena button:hover {
+        animation: movimiento 0.9s ease-in-out infinite alternate;
+        box-shadow: inset 0px -10px 20px rgb(173, 165, 165);
+        cursor: pointer;
+    }
+   
+    .nota-restablecer-pass{
+        font-size: 0.9rem;
+    }
+
+

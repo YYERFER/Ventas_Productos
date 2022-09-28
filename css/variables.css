@@ -1,0 +1,40 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Courgette&family=Philosopher:wght@400;700&family=Poppins:wght@100;300;400;500;600;700&family=Roboto:wght@300;400&display=swap'); */
+
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Alumni+Sans+Collegiate+One:ital@0;1&family=Courgette&family=Philosopher:wght@400;700&family=Poppins:wght@100;300;400;500;600;700&family=Roboto:wght@300;400&display=swap');
+
+:root{
+    --color_font_encabezado: #F8F8F8;
+    --color_font_encabezado_2:rgb(253, 203, 5) ;
+    --color_menu:rgb(82, 20, 216);
+    --color_menu_hover: rgb(122, 64, 247);
+    --color_sesion_texto: #BA9788;
+    --color_sesion_titulo: #c44e1c;
+    --font_sub_menu: 'Philosopher', sans-serif;
+    --font_logo: 'Alumni Sans Collegiate One', sans-serif;
+    --color_body: #EEEEEE;
+    --color_campo_form:rgb(98, 89, 89);
+    --color_linea_campo_form: #ccc;
+    --color_linea_footer:rgb(72, 131, 239) ;
+    --color-logo: rgb(3, 3, 255) ;
+    --color_frame: #E3E3E3;
+    --color_hover_encuesta: rgb(240, 240, 58);
+    --color_fondo_logo:rgb(195, 177, 234);
+    --color_fondo_logo_hover: rgb(171, 138, 240);
+    
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Courgette', cursive;
+    font-family: 'Philosopher', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    scroll-behavior: smooth;
+ }

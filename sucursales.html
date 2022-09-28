@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sucursales</title>
+
+    <link rel="stylesheet" href="css/style-icons-Brands.css">
+    <link rel="stylesheet" href="css/hamburgers.css">
+    <link rel="stylesheet" href="css/styles-menu-e-inicio-sesion.css">
+    <link rel="stylesheet" href="css/styles-footer.css">
+    <link rel="stylesheet" href="css/styles-sucursales.css">
+</head>
+
+<body>
+
+    <!-- RESPOSIVE MIN 900 PX -->
+    <div class="linea-superior">
+        <div class="flash"></div>
+    </div>
+    <div class="header-Large-superior">
+        <ul>
+            <li><a href="#">venta telefónica (+51) 994 237 285</a></li>
+            <li>|</li>
+            <li><a href="sucursales.html">nuestras tiendas</a></li>
+            <li>|</li>
+            <li><a href="#">Venta Empresa </a></li>
+        </ul>
+    </div>
+
+
+    <header>
+        <div class="header-Large-inferior">
+            <div class="logo"><a href="index.html">IDIFVSAC</a></div>
+            <h1>INDUSTRIAS Y DISEÑOS DE FIBRA DE VIDRIO S.A.C</h1>
+
+            <div class="contenedor-inicio-sesion">
+                <a onclick="incio_sesion()">|<i class="fa-solid fa-user-large"></i><span>Inicia Sesion Mi
+                        cuenta</span>|</a>
+                        
+            </div>
+        </div>
+
+        <!-- HEADER MOVILl -->
+        <div class="barra-header-movil">
+            <button id="burger" class="hamburger hamburger--collapse" type="button" onclick="activarFondo()">
+                <span class="hamburger-box">
+                    <span class="hamburger-inner"></span>
+                </span>
+            </button>
+
+            <div class="logo-movil">
+                <h2>IDIFVSAC</h2>
+            </div>
+
+            <a onclick="incio_sesion()"><i class="fa-solid fa-user-large"> </i><span></a>
+        </div>
+
+    </header>
+
+    <!-- MENU PC -->
+    <nav>
+        <ul class="menu">
+            <li class="li-item1"><a href="#">Productos</a>
+                <ul class="sub-menu-1">
+                    <li class="li-item-1-1"><a href="#">Brochas</a></li>
+                    <li class="li-item-1-2"><a href="./prod-pigmentos.html">Pigmentos Polvos</a>
+                        <ul class="sub-menu-1-2">
+                            <li><a href="#">Pigmento Amarillo</a></li>
+                            <li><a href="#">Pigmento Azul</a></li>
+                            <li><a href="#">Pigmento Verde</a></li>
+                            <li><a href="#">Pigmento Negro</a></li>
+                            <li><a href="#">Pigmento Blanco</a></li>
+                        </ul>
+                    </li>
+                    <li class="li-item-1-3"><a href="./prod-resina-monomero.html">Resinas Poliester</a></li>
+                    <li class="li-item-1-4"><a href="#">Pinturas</a></li>
+                    <li class="li-item-1-5"><a href="#">Rodillos</a></li>
+                </ul>
+            </li>
+
+            <li class="li-item2"><a href="#">Item2</a>
+                <ul class="sub-menu-2">
+                    <li class="li-item-2-1"><a href="#">Sub-Item 1</a></li>
+                    <li class="li-item-2-2"><a href="#">Sub-Item 2</a></li>
+                    <li class="li-item-2-3"><a href="#">Sub-Item 3</a></li>
+                    <li class="li-item-2-4"><a href="#">Sub-Item 4</a></li>
+                    <li class="li-item-2-5"><a href="#">Sub-Item 5</a></li>
+                    <li class="li-item-2-6"><a href="#">Sub-Item 6</a></li>
+                    <li class="li-item-2-7"><a href="#">Sub-Item 7</a></li>
+                </ul>
+            </li>
+            <li class="li-item3"><a href="#">Item3</a></li>
+            <li class="li-item4"><a href="#">Item4</a></li>
+            <li class="li-item5"><a href="./sucursales.html">Sucursales</a></li>
+        </ul>
+    </nav>
+
+    <!-- MENÚ MOVIL -->
+    <div id="menuMobil-id" class="menuMobil">
+        <ul>
+            <li><a href="./index.html" onclick="activarFondo()">Inicio</a></li>
+            <li><a href="./prod-pigmentos.html" onclick="activarFondo()">Pigmentos</a></li>
+            <li><a href="./prod-resina-monomero.html" onclick="activarFondo()">Resina y Monómero</a></li>
+            <li><a href="./sucursales.html">Sucursales</a></li>
+            <li><a href="#" onclick="incio_sesion(), activarFondo()">Iniciar Sesion</a></li>
+            
+        </ul>
+    </div>
+
+
+    <main>
+
+
+        <!-- FONDO OSCURO INICIO DE SESION -->
+
+        <div id="sidebar-fondo" class="class-sidebar-fondo" onclick="activarFondo()"></div>
+
+        <!-- FONDO OSCURO INICIO DE SESION -->
+
+        <div id="fondo-inicio" class="fondo-inicio-sesion" onclick="incio_sesion()"></div>
+
+        <!-- FORMULARIO DE INICIO DE SESION -->
+
+        <div id="container-sesion-id" class="container-sesion">
+            <div class="container-decripcion-sesion">
+
+
+                <div class="sub-container-1">
+                    <div class="logo-sesion">IDIFVSAC</div>
+                    <div class="cabecera">
+                        <h2>Inicia Sesion</h2>
+                        <p>Solo para usuarios de la Empresa</p>
+                    </div>
+                    <div class="cierre-inicio-sesion" onclick="incio_sesion()">
+                        <img src="icon/cerrar2.png" alt="cerrar">
+                    </div>
+                </div>
+
+
+                <div class="sub-container-2">
+                    <form action="">
+
+                        <div class="email-inicio-sesion">
+
+                            <label for="type-email">Correo Eléctronico
+                                <div class="imgMail-campo-inicio-sesion">
+                                    <span>
+                                        <i class="fa-solid fa-envelope"></i>
+                                    </span>
+                                    <input type="email" id="type-email" class="campoMail-inicio-sesion"
+                                        placeholder="Ingresa tu correo electrónico" required>
+                                </div>
+                            </label>
+                        </div>
+
+                        <div class="password-inicio-sesion">
+
+                            <label for="type-password">Contraseña
+                                <div class="imgMail-campo-inicio-sesion">
+                                    <span>
+                                        <i class="fa-solid fa-key"></i>
+                                    </span>
+                                    <input type="password" id="type-password" class="campoPassword-sesion"
+                                        placeholder="Ingresa tu contraseña" required>
+                                </div>
+                            </label>
+                        </div>
+
+                        <div class="restablecer-password-inicio-sesion">
+                            <a href="restablecer-contraseña.html">Restablecer Contraseña</a>
+                        </div>
+
+                        <div class="boton-inicio-sesion">
+                            <button type="submit">Ingresar</button>
+                        </div>
+
+                        <div class="registrarse">
+                            <p>o</p>
+                            <p>¿No tienes cuenta? <a href="registrar-cuenta.html">Regístrate</a></p>
+                        </div>
+
+                    </form>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- HASTA AQUI TERMINA FORMULARIO DE INICIO DE SESION -->
+
+
+        <div class="sucursales-contenedor-general">
+            <div class="sucursales-contendor-1">
+                <h2>Nuestras tiendas</h2>
+                <p>Es obligatorio el uso de doble mascarilla, al ingreso y durante su permanencia en tienda</p>
+            </div>
+
+            <div class="sucursales-contendor-2">
+                <div class="horario">
+                    <span class="icon-clockify"></span>
+                    <p>HORARIO DE ATENCIÓN</p>
+                </div>
+
+                <div class="ubicacion-general">
+                    <div class="ubicacion-1">
+                        <div>
+                            <b>Av. Gerardo Unger 5025 URB IND El Naranjal-Los Olivos-lima</b>
+                            <div class="horario-atencion">
+                                <span class="icon-symantec"></span>
+                                <p>Lunes a sabábado | 8:00am a 6:00pm</p>
+                            </div>
+                        </div>
+                        <div class="mapa-1">
+                            <a href="https://goo.gl/maps/MPuvB8mJBbsHkf7T8" target="_blank">
+                                <span class="icon-zingat"></span>
+                                <p>Ver mapa</p>
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                    <div class="ubicacion-2">
+                        <div>
+                            <b>Av. Alfredo Mendiola 210 San Martín de Porres-Lima</b>
+                            <div class="horario-atencion">
+                                <span class="icon-symantec"></span>
+                                <p>Lunes a sabábado | 8:00am a 6:00pm</p>
+                            </div>
+                        </div>
+                        <div class="mapa-1">
+                            <a href="https://goo.gl/maps/9uLCmJ8f7ombKzYa8" target="_blank">
+                                <span class="icon-zingat"></span>
+                                <p>Ver mapa</p>
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                    <div class="ubicacion-3">
+                        <div>
+                            <b>Av. Próceres de la Independencia-Lima</b>
+                            <div class="horario-atencion">
+                                <span class="icon-symantec"></span>
+                                <p>Lunes a sabábado | 8:00am a 6:00pm</p>
+                            </div>
+                        </div>
+                        <div class="mapa-1">
+                            <a href="https://goo.gl/maps/RhEbamM8qPJs4fC67" target="_blank">
+                                <span class="icon-zingat"></span>
+                                <p>Ver mapa</p>
+                            </a>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </main>
+
+    <footer>
+        <div class="contenedor-footer">
+            <div class="margen-superior-footer">
+                <div class="sub-contenedor-1">
+
+                    <div class="nosotros">
+                        <h2>NOSOTROS</h2>
+                        <div class="linea-nosotros"></div>
+                        <p>Empresa dedica a la venta de Fibra de vidrio de tela china, malla,brochas,productos de seguridad como lentes, guantes, entre otros, y además lo que corresponde en el área de quimicos de pigmentos, resinas, monómero, entre otros, dando uso en estructura de carroceria Vehicular, diseño de piesas culturaless a base de resina, y más ....</p>
+                    </div>
+
+                    <div class="ubicacion">
+                        <h2>UBICACIÓN</h2>
+                        <div class="linea-ubicacion"></div>
+
+                        <div class="ubicacion-items1">
+                            <img src="icon/ubicacion1.ico" alt="ubicacion">
+                            <span>Sede Principal Av. Gerardo Unger 5025 - Los Olivos - Lima</span>
+                        </div>
+
+                        <div class="ubicacion-items2">
+                            <img src="icon/call2.ico" alt="contacto">
+                            <span>(01) 485 9880 / (+51) 997 979 248</span>
+                        </div>
+
+                        <div class="ubicacion-items3">
+                            <img src="icon/correo4.ico" alt="correo">
+                            <span>jrcj29@hotmail.com</span>
+                        </div>
+
+                    </div>
+
+                    <div class="redes-sociales">
+                        <h2>REDES SOCIALES</h2>
+                        <div class="linea-sociales"></div>
+
+                        <div class="flex-sociales">
+                            <div class="redes-sociales-items1">
+                                <a href="https://www.facebook.com" target="_blank"> <img
+                                        src="icon/social_facebook_fb_87.ico" alt="facebook">
+                                    <span>Facebook</span></a>
+                            </div>
+
+                            <div class="redes-sociales-items2">
+                                <a href="https://www.twitter.com" target="_blank"> <img src="icon/social_Twitter_95.ico"
+                                        alt="twitter">
+                                    <span>Twitter</span></a>
+                            </div>
+
+                            <div class="redes-sociales-items3">
+                                <a href="https://www.linkedin.com" target="_blank"> <img
+                                        src="icon/sociallinkedin_member_101.ico" alt="linkedin">
+                                    <span>Linkedin</span></a>
+                            </div>
+
+                            <div class="redes-sociales-items4">
+                                <a href="https://www.instagram.com/" target="_blank"> <img src="icon/instagram3.ico"
+                                        alt="instagram">
+                                    <span>Instagram</span></a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="sub-contenedor-2">
+                <hr>
+                <p>Todos los derechos reservados © 2022-<b>IDIFVSAC</b></p>
+            </div>
+        </div>
+
+    </footer>
+
+
+    <script src="js/menuMovil.js"></script>
+    <script src="js/js.js"></script>
+    <script src="https://kit.fontawesome.com/e3133ae5be.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

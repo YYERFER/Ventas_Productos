@@ -1,0 +1,182 @@
+@import url(variables.css);
+
+.prod-pigmentos,
+.prod-resina-manomero{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+/* PRODUCTOS PIGMENTOS */
+.prod-pigmentos  a{
+    width: 90vw;
+    margin-top: 70px;
+    display: flex;
+    justify-content: center;
+    color: #7b41f9;
+}
+.before-prod-pigmentos{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+}
+
+.before-prod-pigmentos::before{
+    content: "POLVOS Y PASTA";
+    position: absolute;
+    background: rgba(59, 56, 56, 0.557);
+    width: 300px;
+    height: 100px;
+    margin-top: 150px;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 900;
+    color:#fff;
+}
+
+.before-prod-pigmentos:hover::before{
+    background: rgba(59, 56, 56, 0.4);
+    color:yellow ;
+}
+
+.prod-pigmentos a img,
+.prod-resina-manomero a img{
+   width: 90vw; 
+   height: 250px;
+   border-radius: 5px;
+  
+} 
+.prod-pigmentos a img:hover,
+.prod-resina-manomero a img:hover{
+    filter: opacity(90%); 
+}
+
+
+/* RESINA POLIESTER Y MONOMERO */
+.prod-resina-manomero a {
+    margin-top: 50px;
+}
+
+.before-prod-resina-monomero::before{
+    content: "RESINA POLIESTER Y MONÓMERO";
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    margin-top: -256px;
+    margin-left: 30px;
+    font-size: 1.75rem;
+    font-weight: 900;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:#fff;
+}
+.before-prod-resina-monomero:hover::before{
+    text-shadow: 0px 5px 5px black;
+}
+
+@media only screen and (min-width: 600px) {
+    
+/* PRODUCTOS PIGMENTOS */
+    .prod-pigmentos  a{
+        width: 100%; 
+    }
+    
+    .before-prod-pigmentos::before{
+        width: 500px;
+        height: 130px;
+        margin-top: 250px;
+        font-size: 3.5rem;
+    }
+    
+    
+    .prod-pigmentos a img,
+    .prod-resina-manomero a img{
+       height: 380px;
+      
+    }
+    
+/* RESINA POLIESTER Y MONOMERO */
+ 
+    .before-prod-resina-monomero::before{
+        width: 450px;
+        height: 380px;
+        margin-top: -387px;
+        margin-left: 30px;
+        font-size: 5vw;
+
+    }
+
+  }
+
+@media only screen and (min-width: 820px) {
+
+    
+    /* RESINA POLIESTER Y MONOMERO */
+    
+    .before-prod-resina-monomero::before{
+        
+        width: 500px;
+        height: 380px;
+        margin-top: -387px;
+        margin-left: 30px;
+        font-size: 5.2vw;
+    }
+}
+
+@media only screen and (min-width: 912px) {
+
+/* PRODUCTOS PIGMENTOS */
+.prod-pigmentos  a{
+    width: 90vw;
+    margin-top: 50px; 
+}
+
+.before-prod-pigmentos::before{
+    width: 570px;
+    height: 200px;
+    margin-top: 300px;
+    font-size: 3.5rem;
+}
+
+.prod-pigmentos a img,
+.prod-resina-manomero a img{
+   height: 500px; 
+} 
+
+/* RESINA POLIESTER Y MONOMERO */
+
+.before-prod-resina-monomero::before{
+    
+    width: 650px;
+    height: 300px;
+    margin-top: -410px;
+    margin-left: 30px;
+    font-size: 4.5vw;
+    /* background-color: rgb(21, 0, 255); */
+}
+}
+@media only screen and (min-width: 1024px) {
+
+    /* PRODUCTOS PIGMENTOS */
+
+.before-prod-pigmentos::before{
+    width: 800px;
+    height: 200px;
+    margin-top: 300px;
+    font-size: 5rem;
+}
+    /* RESINA POLIESTER Y MONOMERO */
+    
+    .before-prod-resina-monomero::before{
+        
+        width: 750px;
+        height: 495px;
+        margin-top: -505px;
+        margin-left: 30px;
+        font-size: 5.2vw;
+    }
+}
